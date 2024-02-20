@@ -20,6 +20,8 @@ const barsBtn = document.getElementById("barsBtn");
 const gridBtn = document.getElementById("gridBtn");
 
 const modeBtn = document.getElementById("mode");
+var remainingCounterElement = document.getElementById("remainingCounter");
+
 
 let updateIndex;
 
@@ -284,6 +286,8 @@ titleInput.addEventListener("input", function () {
 
 descriptionInput.addEventListener("input", function () {
   validate(descriptionInput, descRegex);
+  remainingCounter = 100 - descriptionInput.value.split("").length;
+  remainingCounterElement.innerHTML = remainingCounter;
 });
 
 barsBtn.addEventListener("click", changeToBars);
@@ -299,3 +303,4 @@ function logOut() {
   localStorage.removeItem("loggedUser");
   location.href = "./sign-in.html";
 }
+
