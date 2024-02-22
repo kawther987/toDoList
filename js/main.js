@@ -44,7 +44,7 @@ function showModal() {
   modal.classList.remove("d-none");
   document.body.style.overflow = "hidden ";
 }
-//2  ways to hide modal
+// ? 2  ways to hide modal
 
 function hideModal() {
   modal.classList.add("d-none");

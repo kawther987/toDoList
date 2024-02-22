@@ -286,7 +286,7 @@ footer {
 }
 
 .copyright a:hover {
-  color: #fecd70;
+  color: #eb1d36;
 }
 
 .logOut {
@@ -296,8 +296,12 @@ footer {
   position: fixed;
   right: 30px;
   bottom: 30px;
+  transition: 0.5s color ease-in-out;
   i {
     font-size: 25px;
     cursor: pointer;
   }
+}
+.logOut:hover {
+  color: #ff42aa;
 }
